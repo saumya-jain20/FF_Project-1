@@ -1,0 +1,385 @@
+.App {
+  text-align: center;
+}
+ 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+ 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+ 
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+ 
+.App-link {
+  color: #61dafb;
+}
+ 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #d3cfcf;
+  color: #fdfdfd;
+}
+ 
+.logo img {
+  width: 110px; /* Adjust the width as needed */
+  padding-left: 8px;
+  padding-top: 1px;
+}
+ 
+.user-options a {
+  margin-left: 5px;
+  color: #0e1b36;
+  text-decoration: none;
+  padding-right: 18px;
+  font-weight: bold;
+  background-color: #d3cfcf; /* Add a background color */
+  border-radius: 5px; /* Add rounded corners for a decorative touch */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.user-options a:hover {
+  text-decoration: underline;
+  background-color: #d4e3f7; /* Change background color on hover */
+}
+
+ 
+.left-column {
+  width: 100px; /* Adjust the width as needed */
+  background-color: #d3cfcf;
+  padding: 10px;
+}
+ 
+.left-column-item {
+  margin-top: 10px;
+  padding: 3px;
+  margin-bottom: 10px;
+  color: #0e1b36;
+  text-decoration: none;
+}
+ 
+.left-column-item a:hover {
+  text-decoration: underline;
+}
+ 
+.left-column-item h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #0e1b36;
+}
+ 
+.right-column {
+  flex: 1;
+  padding: 8px;
+}
+ 
+.search-bar {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #d3cfcf;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+}
+
+.search-bar:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance box shadow on hover */
+}
+
+ 
+.product-list {
+  border: 1px solid #424141;
+  padding: 10px;
+  max-height: 470px;
+  max-width: 350px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+.product-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ 
+.product-list li {
+  display: flex; /* Make the li a flex container */
+  align-items: center; /* Center align items vertically in the flex container */
+  justify-content: space-between; /* Space elements evenly in the flex container */
+  margin-bottom: 10px; /* Adjust the margin as needed for the gap between products */
+  padding: 8px;
+  border: 1px solid #ddd; /* Optional: add a border for better separation */
+}
+ 
+.product-name {
+  flex-grow: 1; /* Allow the product name to take up the remaining space */
+}
+ 
+.time-frames {
+  display: flex;
+}
+ 
+.time-frame {
+  margin-right: 5px; /* Adjust the margin as needed for the gap between time frames */
+  padding: 4px 8px; /* Adjust the padding for the size of the time frames */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+.screener-list {
+  border: 1px solid #424141 ;
+  max-height: 470px; /* Adjust the height as needed */
+  max-width: 350px;
+  overflow-y: auto;
+  padding: 10px;
+}
+ 
+.screener-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ 
+.screener-list li {
+  display: flex; /* Make the li a flex container */
+  align-items: center; /* Center align items vertically in the flex container */
+  justify-content: space-between; /* Space elements evenly in the flex container */
+  margin-bottom: 10px; /* Adjust the margin as needed for the gap between products */
+  padding: 8px;
+  border: 1px solid #ddd; /* Optional: add a border for better separation */
+}
+ 
+.product-list h3 {
+  margin-top: 0;
+}
+ 
+.list h3 {
+  margin-top: 0;
+}
+ 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+ 
+.main-content {
+  display: flex;
+  flex: 1;
+}
+ 
+.product-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+ 
+.product-name {
+  flex: 1; /* Allow the product name to grow and take up remaining space */
+}
+ 
+.time-frame-dropdown {
+  /* display: flex;
+  align-items: center;  */
+  margin-left: 5px; /* Adjust the margin as needed */
+  padding-right: 130px;
+  padding-left: 2px;
+}
+.time-frame-dropdown select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+ 
+.current-price {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+ 
+.additional-details {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  padding: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list li:hover {
+  background-color: #d3cfcf;
+}
+
+.list li.selected {
+  background-color: #4fa552;
+  color: #ffffff;
+}
+
+.product-box:hover {
+  background-color: #d3cfcf;
+}
+
+.product-box.selected {
+  background-color: #4fa552 !important;
+  color: #fff !important;
+}
+
+.product-box:active {
+  background-color: #4fa552;
+  color: #fff;
+}
+
+.additional-details {
+  display: flex;
+  align-items: center;
+}
+
+
+.time-frame-dropdown select:hover {
+  border-color: #666;
+}
+
+.time-frame-dropdown select:focus {
+  outline: none;
+  border-color: #1f1f1f; /* Adjust the focus border color */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Adjust the focus box shadow */
+}
+
+.selected-screeners {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  width: 200px; /* Set the width as per your requirement */
+  padding: 10px; /* Adjust padding as needed */
+  background-color: #d3cfcf; /* Set a background color for better visibility */
+  border: 1px solid #ffffff; /* Add a border for better separation */
+}
+ 
+.selected-screener-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.selected-screener {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.selected-screeners {
+  /* position: fixed; */
+  top: 70%;
+  height: 300px;
+  right: 0;
+  width: 1400px; /* Set the width as per your requirement */
+  background-color: #d3cfcf; /* Set a background color for better visibility */
+  border: 1px solid #424141; /* Add a border for better separation */
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  /* flex-direction: row;  to make it horizontal */
+  align-items: flex-center;
+}
+ 
+.selected-screener-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7px; /* Add margin between Selected Screeners and Screener List */
+}
+ 
+.selected-screener {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #8b8989; /* Add background color or styling as needed */
+  padding: 2px; /* Add padding as needed */
+  color: #000000;
+  font-weight: 500;
+}
+
+.scan-button {
+  background-color: #3f9742;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 760px;
+  margin-left: 13px;
+  transition: background-color 0.3s;
+}
+
+.scan-button:hover {
+  background-color: #1c521e; /* Darker green on hover */
+}
+
+
+.scan-result {
+  margin-top: 10px;
+  color: #4CAF50;
+}
+
+
+.graph-container {
+  top: 8px;
+  width: 1430px;
+  height: 670px;
+  border: 1px solid #000000;
+  position: relative;
+}
+
+.save-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: #3f9742;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.save-button:hover {
+  background-color: #1c521e;
+}
+
+.save-button-icon {
+  margin-right: 5px;
+}
